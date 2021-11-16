@@ -1,2 +1,5 @@
 #!/usr/bin/python3
-print(*["%c" % a for a in range(ord('a'),ord('z')+1) if a not in (ord('q'),ord('e'))],sep='',end='')
+for alpha_letters in range(ord('a'), ord('z')+1):
+  if ord(alpha_letters) ==101  or ord(alpha_letters) == 113:
+    continue
+    print("{:c}".format(alpha_letters), end="")
